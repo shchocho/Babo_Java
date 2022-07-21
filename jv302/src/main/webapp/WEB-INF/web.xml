@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+		 xmlns:xsi="http://www.w3.org/2001XMLSchema-instance"
+		 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+		 version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>GuguDanServlet</servlet-name>
+  	<servlet-class>com.varxyz.jv302.mod002.GuguDanServlet</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  	<servlet-name>GuguDanServlet</servlet-name>
+  	<url-pattern>/hello.view</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>LifeCycleTestServlet</servlet-name>
+  	<servlet-class>com.varxyz.jv302.mod003.LifeCycleTestServlet</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+  	<servlet-name>LifeCycleTestServlet</servlet-name>
+  	<url-pattern>/liftCycle.view</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+    <servlet>
+  	<servlet-name>ServletConfigTestServlet</servlet-name>
+  	<servlet-class>com.varxyz.jv302.mod003.ServletConfigTestServlet</servlet-class>
+  	<init-param>
+  		<param-name>season-list</param-name>
+  		<param-value>Spring, Summer, Fall, Winter</param-value>
+  	</init-param>  	
+  </servlet>  
+  
+  <servlet-mapping>
+  	<servlet-name>ServletConfigTestServlet</servlet-name>
+  	<url-pattern>/servletConfig.view</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

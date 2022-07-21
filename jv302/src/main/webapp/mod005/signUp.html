@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+    <style>
+      ul,li,ol{
+        list-style: none;
+      }
+      body{
+        margin:0; padding:0;
+      }    
+      section{      	
+      	margin: 0 auto;
+      	width: 1000px;
+      	height: 900px;      
+      } 
+      section > h3 {
+      	text-align: center;
+      	font-size: 32px;
+      	line-height: 32px;
+      	color: #b2e33e;
+      	font-weight: bold;
+      }
+      section > div {
+      	margin-top: 50px;
+      	
+      }
+      section > div > form > div{
+      	margin-top : 40px;
+      	display: flex;
+      	justify-content:center;
+      }
+    </style>
+</head>
+<body> 
+  	<!-- <url-pattern>/mod005/login.do<url-pattern>  -->
+       <section>
+      <h3>회원가입</h3>
+      <div>
+        <form action="login.do" method="get">
+          <div>
+            회원 아이디 : <input type="text" name="userId">
+          </div>
+          <div>
+            비밀 번호: <input type="password" name="userPW">
+            <br>
+          </div>
+          <div>
+            이름 : <input type="text" name="userName">
+            <br>
+          </div>
+          <div>
+            주민번호: <input type="text" name="userSsn">
+            <br>
+          </div>
+          <div>
+            이메일1 : <input type="text" name="userEmail1">
+            이메일2 : <select name="globalEmail">
+              <option value="google.com">google.com</option>
+              <option value="naver.com">naver.com</option>
+              <option value="insta.com">insta.com</option>
+            </select>
+            <br>
+          </div>
+          <div>
+            관심분야:
+            <label><input type="checkbox" name="hobby" value="Java">Java</label>
+            <label><input type="checkbox" name="hobby" value="JavaScript">JavaScript</label>
+            <label><input type="checkbox" name="hobby" value="JSP">JSP</label>
+            <label><input type="checkbox" name="hobby" value="Servlet">Servlet</label>
+          </div>
+          <div>
+            <input type="submit" value="확인">
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+
+</body>
+</html>
